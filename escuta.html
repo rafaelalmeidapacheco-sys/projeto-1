@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Escuta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Apoio Estudantil</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="escuta.html">Portal de Escuta</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="referencias.html">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Portal de Escuta</h2>
+    <p>Este é um espaço seguro de simulação para você desabafar. Nenhuma informação escrita aqui será salva.</p>
+
+    <form id="formEscuta" onsubmit="enviarDesabafo(event)">
+      <label for="desabafo">Escreva o que está sentindo:</label><br>
+      <textarea id="desabafo" rows="6" required placeholder="Digite sua mensagem..."></textarea><br>
+      <button type="submit">Enviar Desabafo</button>
+    </form>
+
+    <div id="mensagemAcolhimento" class="caixa-mensagem" style="display: none;"></div>
+
+    <section class="orientacoes">
+      <h3>O que fazer se estiver passando por isso?</h3>
+      <p>Procure ajuda imediata de um adulto de confiança: professores, equipe pedagógica, direção escolar ou seus familiares. Você não precisa enfrentar isso sozinho.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Apoio - Combate ao Bullying</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Apoio Estudantil</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="escuta.html">Portal de Escuta</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="referencias.html">Referências</a></li>
+      </ul>
+      <div class="acessibilidade">
+        <button onclick="alternarTema()">Modo Escuro</button>
+        <button onclick="alterarFonte(1)">A+</button>
+        <button onclick="alterarFonte(-1)">A-</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="banner">
+      <h2>Juntos contra o Bullying</h2>
+      <p>Um espaço seguro para aprender, acolher e transformar o ambiente escolar.</p>
+    </section>
+
+    <section class="conteudo">
+      <h3>O que é Bullying?</h3>
+      <p>O bullying é caracterizado por atitudes agressivas, intencionais e repetitivas, adotadas por um ou mais estudantes contra outro, sem motivação evidente, causando dor e angústia.</p>
+
+      <h3>Tipos de Bullying</h3>
+      <ul>
+        <li><strong>Físico:</strong> Bater, empurrar, chutar ou danificar pertences.</li>
+        <li><strong>Verbal:</strong> Insultos, apelidos pejorativos e piadas de mau gosto.</li>
+        <li><strong>Social/Psicológico:</strong> Exclusão, espalhar boatos e chantagem emocional.</li>
+        <li><strong>Cyberbullying:</strong> Intimidação e ofensas no ambiente virtual.</li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="btnTopo" onclick="voltarAoTopo()">↑ Topo</button>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz sobre Bullying</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Apoio Estudantil</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="escuta.html">Portal de Escuta</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="referencias.html">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Quiz: Teste seus conhecimentos</h2>
+
+    <form id="formQuiz">
+      <div class="pergunta">
+        <p>1. Colocar apelidos pejorativos repetidamente em um colega é considerado bullying?</p>
+        <label><input type="radio" name="p0" value="sim"> Sim</label>
+        <label><input type="radio" name="p0" value="nao"> Não</label>
+      </div>
+
+      <div class="pergunta">
+        <p>2. Presenciar um ato de bullying e não contar a ninguém ajuda a resolver o problema?</p>
+        <label><input type="radio" name="p1" value="sim"> Sim</label>
+        <label><input type="radio" name="p1" value="nao"> Não</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3. Contar para um professor que um colega está sofrendo bullying é denúncia legítima e necessária?</p>
+        <label><input type="radio" name="p2" value="sim"> Sim</label>
+        <label><input type="radio" name="p2" value="nao"> Não</label>
+      </div>
+
+      <div class="pergunta">
+        <p>4. Fazer brincadeiras amigáveis com o consentimento mútuo entre amigos é bullying?</p>
+        <label><input type="radio" name="p3" value="sim"> Sim</label>
+        <label><input type="radio" name="p3" value="nao"> Não</label>
+      </div>
+
+      <div class="pergunta">
+        <p>5. Excluir propositalmente um colega das atividades em grupo para isolá-lo é uma forma de bullying?</p>
+        <label><input type="radio" name="p4" value="sim"> Sim</label>
+        <label><input type="radio" name="p4" value="nao"> Não</label>
+      </div>
+
+      <button type="button" onclick="calcularResultado()">Enviar Respostas</button>
+    </form>
+
+    <div id="resultadoQuiz" class="caixa-mensagem"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
